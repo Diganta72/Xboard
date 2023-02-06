@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+button:focus{
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+
+.navbar {
+    border-bottom: 1px solid #c4c1c1;
+}
+
+.navbar span {
+    position: relative;
+    background-color: blueviolet;
+    width: 30px;
+    height: 8px;
+    border-radius: 25px;
+}
+
+.btn {
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 0;
+    outline: 0;
+}
+
+.btn:focus,
+.btn.focus {
+    box-shadow: unset;
+    outline: 0;
+    border: 0;
+}
+
+.carousel .carousel-icon {
+    color: red !important;
+    position: absolute;
+    top: 30%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-img:hover {
+    filter: brightness(50%);
+    transform: scale(1.05);
+    transition: all 0.8s ease-in-out;
+}
+
+.card {
+    background-color: unset;
+    border: 0;
+}
+
+
+
+@media (max-width: 768px){
+    .carousel .carousel-icon {
+     
+        position: absolute;
+        top: 28%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 526px) {
+    .carousel .carousel-icon {
+        color: red !important;
+        position: absolute;
+        top: 24%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 318px) {
+    .carousel .carousel-icon {
+        display: none;
+    }
+}
